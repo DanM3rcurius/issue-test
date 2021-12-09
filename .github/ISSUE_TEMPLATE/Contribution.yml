@@ -112,12 +112,14 @@ body:
     id: hours-worked-calc
     attributes:
       label: Hours Worked (This Month)
+      placeholder: Copy from above
     validations:
       required: true
   - type: input
     id: hourly-rate-calc
     attributes:
       label: Local Hourly Rate
+      placeholder: Copy from above
     validations:
       required: true
   - type: textarea
