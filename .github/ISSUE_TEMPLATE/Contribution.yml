@@ -12,7 +12,7 @@ body:
     id: date-joined
     attributes:
       label: Date Joined ACO
-      description: (Month/Day/Year - MM/DD/YYYY)
+      description: (Month/Day/Year)
       placeholder: Ex. 11/08/2020
     validations:
       required: true
