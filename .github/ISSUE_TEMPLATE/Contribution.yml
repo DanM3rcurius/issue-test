@@ -109,13 +109,13 @@ body:
     attributes:
       value: "## Cost & Remuneration Calculation"
   - type: input
-    id: hours-worked
+    id: hours-worked-calc
     attributes:
       label: Hours Worked (This Month)
     validations:
       required: true
   - type: input
-    id: hourly-rate
+    id: hourly-rate-calc
     attributes:
       label: Local Hourly Rate
     validations:
@@ -126,7 +126,7 @@ body:
       label: Other Expenses
       description: Please attach invoices
     validations:
-      required: true
+      required: false
   - type: input
     id: total-costs
     attributes:
