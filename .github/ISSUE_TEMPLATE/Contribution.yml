@@ -2,8 +2,6 @@ name: Prototype Contribution Survey Form
 description: A survey to asses contribution by individuals to the autonomous organisation or SecretDecks directly
 title: "<year(number)>-<month(number)>-<your-name>-SecretDecks-ContributionSurvey"
 labels: [Contribution Survey]
-# assignees:
-#  - is this needed?
 body:
   - type: markdown
     attributes:
@@ -36,6 +34,7 @@ body:
       label: Other Expenses
     validations:
       required: false
+
   - type: input
     id: total-cost
     attributes:
@@ -109,47 +108,43 @@ body:
   - type: markdown
     attributes:
       value: "## Cost & Remuneration Calculation"
-
-  - type: textarea
-    id: what-happened
+  - type: input
+    id: hours-worked
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Hours Worked (This Month)
     validations:
       required: true
-  - type: dropdown
-    id: version
+  - type: input
+    id: hourly-rate
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+      label: Local Hourly Rate
     validations:
       required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
   - type: textarea
-    id: logs
+    id: other-expenses-calc
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
+      label: Other Expenses
+      description: Please attach invoices
+    validations:
+      required: true
+  - type: input
+    id: total-costs
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+      label: Total Costs
+      description: (hours worked * local hourly rate) + other expenses
+    validations:
+      required: true
+  - type: input
+    id: exchange-rate
+    attributes:
+      label: ADA/EUR Exchange Rate
+      description: At time of contribution survey creation
+    validations:
+      required: true
+  - type: input
+    id: total-remunerations
+    attributes:
+      label: Total Remunerations (ADA)
+      description: Total Costs / ADAEUR exchange rate
+    validations:
+      required: true
