@@ -8,6 +8,7 @@ body:
       value: |
         Thanks for taking the time to fill out this Contribution Survey.
 
+# Overview
   - type: input
     id: date-joined
     attributes:
@@ -34,7 +35,6 @@ body:
       label: Other Expenses
     validations:
       required: false
-
   - type: input
     id: total-cost
     attributes:
@@ -59,6 +59,7 @@ body:
     attributes:
       value: "***"
 
+# Teams (Teamworkspaces) contributed to
   - type: checkboxes
     id: teams
     attributes:
@@ -79,6 +80,7 @@ body:
     attributes:
       value: "***"
 
+# Intangibles
   - type: checkboxes
     id: intangibles
     attributes:
@@ -93,6 +95,7 @@ body:
     attributes:
       value: "***"
 
+# Team external work
   - type: input
     id: external-work
     attributes:
@@ -105,6 +108,7 @@ body:
     attributes:
       value: "***"
 
+# Cost & Remuneration Calculation
   - type: markdown
     attributes:
       value: "## Cost & Remuneration Calculation"
