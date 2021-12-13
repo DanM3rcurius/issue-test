@@ -14,7 +14,7 @@ body:
     attributes:
       label: Date Joined ACO
       description: (Month/Day/Year)
-      placeholder: Ex. 11/08/2020
+      placeholder: Ex. 08/21/2020
     validations:
       required: true
   - type: input
